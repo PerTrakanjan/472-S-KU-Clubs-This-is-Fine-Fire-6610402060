@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          npm test
+            npx playwright test 
 
       # Set up Docker Buildx
       - name: Set up Docker Buildx

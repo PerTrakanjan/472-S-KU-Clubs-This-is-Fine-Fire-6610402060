@@ -20,7 +20,7 @@ jobs:
         run: |
           IMAGE_TAG="${GIT_REF#refs/*/}"
 
-          IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/472-S-KU-Clubs-This-is-Fine-Fire-6610402060:${IMAGE_TAG}"
+          IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/kuclubs6610402060:${IMAGE_TAG}"
 
           docker build -t "${IMAGE_NAME}" .
           docker push "${IMAGE_NAME}"

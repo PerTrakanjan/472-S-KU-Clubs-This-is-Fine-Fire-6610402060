@@ -26,4 +26,3 @@ jobs:
             tags: ${{ secrets.DOCKER_USERNAME }}/472-s-ku-clubs:latest
             cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/472-s-ku-clubs:cache # cache-from is used to pull the cache from the registry
             cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/472-s-ku-clubs:cache,mode=max # cache-to is used to push the cache to the registry
-
